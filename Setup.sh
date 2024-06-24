@@ -16,7 +16,7 @@ sudo apt install snapd -y && sudo systemctl enable --now snapd apparmor && syste
 # Python Upload Server
 python3 -m pip install --user uploadserver
 # Upgrade all the things
-sudo apt upgrade
+sudo apt upgrade -y
 # Unpack Wordlists
 wordlists
 # Fonts Install
