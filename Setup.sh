@@ -33,5 +33,6 @@ xfconf-query -c xsettings -p /Gtk/FontName -t 'string' -s 'Comic Sans 11'
 xfconf-query -c xsettings -p /Gtk/MonospaceFontName -t 'string' -s 'Comic Mono 12'
 # terminal config
 wget -nc https://raw.githubusercontent.com/PeterJLewis/KaliSetup/main/qterminal.ini -P ~/.config/qterminal.org/
-# teardown
+# teardown and restart
+sudo reboot
 rm Setup.sh
