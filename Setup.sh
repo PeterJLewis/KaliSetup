@@ -20,7 +20,12 @@ sudo apt upgrade -y
 # Unpack Wordlists
 wordlists
 # Fonts Install
-sudo wget https://raw.githubuserconent.com/PeterJLewis/KaliSetup/main/comic -P /usr/share/fonts/truetype/
+sudo mkdir /usr/share/fonts/comic
+sudo wget https://raw.githubuserconent.com/PeterJLewis/KaliSetup/main/comic/COMICSANS.TTF -P /usr/share/fonts/truetype/comic/
+sudo wget https://raw.githubuserconent.com/PeterJLewis/KaliSetup/main/comic/COMICSANSBOLD.TTF -P /usr/share/fonts/truetype/comic/
+sudo wget https://raw.githubuserconent.com/PeterJLewis/KaliSetup/main/comic/COMICSANSBOLDITALIC.TTF -P /usr/share/fonts/truetype/comic/
+sudo wget https://raw.githubuserconent.com/PeterJLewis/KaliSetup/main/comic/COMICSANSITALIC.TTF -P /usr/share/fonts/truetype/comic/
+sudo wget https://raw.githubuserconent.com/PeterJLewis/KaliSetup/main/comic/ComicMono.ttf -P /usr/share/fonts/truetype/comic/
 # xfce config
 xfconf-query -c xsettings -p /Net/ThemeName -t 'string' -s 'Kali-Purple-Dark'
 xfconf-query -c xsettings -p /Net/IconThemeName -t 'string' -s 'Flat-Remix-Purple-Dark'
