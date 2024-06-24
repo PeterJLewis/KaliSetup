@@ -32,6 +32,6 @@ xfconf-query -c xsettings -p /Net/IconThemeName -t 'string' -s 'Flat-Remix-Purpl
 xfconf-query -c xsettings -p /Gtk/FontName -t 'string' -s 'Comic Sans 11'
 xfconf-query -c xsettings -p /Gtk/MonospaceFontName -t 'string' -s 'Comic Mono 12'
 # terminal config
-wget https://raw.githubusercontent.com/PeterJLewis/KaliSetup/main/qterminal.ini -P ~/.config/qterminal.org/qterminal.ini
+wget -nc https://raw.githubusercontent.com/PeterJLewis/KaliSetup/main/qterminal.ini -P ~/.config/qterminal.org/
 # teardown
 rm Setup.sh
