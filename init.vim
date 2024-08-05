@@ -19,6 +19,9 @@ Plug 'josa42/coc-sh', {'do': 'yarn install --frozen-lockfile'}
 Plug 'fannheyward/coc-sql', {'do': 'yarn install --frozen-lockfile'}
 Plug 'clangd/coc-clangd', {'do': 'yarn install --frozen-lockfile'}
 
+" VimTEX
+Plug 'lervag/vimtex'
+
 " Syntax highlighting via treesitter
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
@@ -210,7 +213,7 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 lua << EOF
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all" (the five listed parsers should always be installed)
-  ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "python", "bash", "sql"},
+  ensure_installed = {"c", "lua", "vim", "vimdoc", "query", "python", "bash", "sql"},
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,
@@ -250,3 +253,23 @@ require'nvim-treesitter.configs'.setup {
   },
 }
 EOF
+
+" VimTeX configuration
+
+" This is necessary for VimTeX to load properly. The "indent" is optional.
+" Note: Most plugin managers will do this automatically!
+filetype plugin indent on
+
+" This enables Vim's and neovim's syntax-related features. Without this, some
+" VimTeX features will not work (see ":help vimtex-requirements" for more
+" info).
+" Note: Most plugin managers will do this automatically!
+syntax enable
+
+" Viewer options: One may configure the viewer either by specifying a built-in
+" viewer method:
+let g:vimtex_view_method = 'zathura'
+
+" Most VimTeX mappings rely on localleader and this can be changed with the
+" following line. The default is usually fine and is the symbol "\".
+let maplocalleader = ","
