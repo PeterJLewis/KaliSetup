@@ -9,6 +9,7 @@ sudo apt install gobuster -y
 sudo apt install feroxbuster -y
 sudo apt install bloodhound -y
 sudo apt install neovim -y
+sudo apt install zathura -y
 # Download and create init.vim for nvim
 wget https://raw.githubusercontent.com/PeterJLewis/KaliSetup/main/init.vim -P ~/.config/nvim/
 # Install snap and Obsidian
