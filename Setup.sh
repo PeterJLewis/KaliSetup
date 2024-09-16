@@ -20,8 +20,6 @@ sudo apt install snapd -y && sudo systemctl enable --now snapd apparmor && syste
 python3 -m pip install --user uploadserver
 # Upgrade all the things
 sudo apt upgrade -y
-# Unpack Wordlists
-wordlists
 # Fonts Install
 sudo mkdir /usr/share/fonts/comic
 sudo wget https://raw.githubusercontent.com/PeterJLewis/KaliSetup/main/comic/COMICSANS.TTF -P /usr/share/fonts/truetype/comic/
@@ -36,6 +34,5 @@ xfconf-query -c xsettings -p /Gtk/FontName -t 'string' -s 'Comic Sans 11'
 xfconf-query -c xsettings -p /Gtk/MonospaceFontName -t 'string' -s 'Comic Mono 12'
 # terminal config
 wget -nc https://raw.githubusercontent.com/PeterJLewis/KaliSetup/main/qterminal.ini -P ~/.config/qterminal.org/
-# teardown and restart
-sudo reboot
-rm Setup.sh
+# Unpack Wordlists
+wordlists
